@@ -7,6 +7,10 @@ class BaseConfig(object):
 
     SECRET_KEY = os.environ.get('SECREY_KEY')
 
+    # SQLAlchemy
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///../db/test.db'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+
 class TestConfig(BaseConfig):
     DEBUG = False
     TESTING = True

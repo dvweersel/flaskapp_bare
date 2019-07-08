@@ -1,2 +1,3 @@
-# Import DB's, auths and other extesions here
+from flask_sqlalchemy import SQLAlchemy
 
+db = SQLAlchemy()
